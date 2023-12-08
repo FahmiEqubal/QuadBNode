@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #520202;
+  color: white;
+}
+
+body.active {
+  background: #f8f8f8;
+  color: black;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+
+  @media screen and (max-width: 1052px) {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    margin: 4%;
+  }
+}
+
+.menu h1 {
+  justify-content: space-around;
+  color: aqua;
+  margin: 2%;
+  padding: 1vh;
+  font-size: 6vh;
+}
+
+.menu div {
+  margin: 0 1%;
+}
+.subMenu {
+  display: flex;
+}
+.subMenu select {
+  justify-content: space-around;
+  margin: 2%;
+  padding: 0.5vh;
+  border-radius: 2vh;
+  background: #222;
+  color: white;
+}
+
+#toggle {
+  position: relative;
+  display: block;
+  width: 9vh;
+  height: 5vh;
+  border-radius: 2vh;
+  margin: 3vh;
+  background: #222;
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow: inset 0 4px 30px rgba(0, 0, 0, 0.1),
+    inset 0 4px 4px rgba(0, 0, 0, 0.1), inset 0 -2px 2px rgba(0, 0, 0, 0.1);
+}
+#toggle.active {
+  background: #fff;
+  box-shadow: inset 0 1px 30px rgba(0, 0, 0, 0.1),
+    inset 0 1px 4px rgba(0, 0, 0, 0.1), inset 0 -2px 4px rgba(0, 0, 0, 0.05);
+}
+#toggle .indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5vh;
+  height: 5vh;
+  background: aqua;
+  border-radius: 50%;
+  transform: scale(0.9);
+  box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.5),
+    inset 0 2px 2px rgba(255, 255, 255, 0.2),
+    inset 0 -2px 2px rgba(255, 255, 255, 0.2);
+  transition: 0.5s;
+}
+#toggle.active .indicator {
+  left: 5vh;
+  background: aqua;
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.1),
+    inset 0 2px 2px rgba(255, 255, 255, 0.2),
+    inset 0 -2px 2px rgba(255, 255, 255, 0.2);
+}
+#time .circle {
+  position: relative;
+  width: 12vh;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#time .circle svg {
+  position: relative;
+  width: 12vh;
+  height: 12vh;
+  transform: rotate(270deg);
+}
+
+#time .circle svg circle {
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke-width: 2;
+  stroke: #282828;
+  stroke-linecap: round;
+  transform: translate(3.2vh, 3.2vh);
+  transition: stroke 0.5s;
+}
+
+#time .circle svg circle:nth-child(2) {
+  stroke: var(--clr);
+  stroke-dasharray: 220;
+  stroke-dashoffset: 220;
+}
+
+#time div {
+  position: absolute;
+  text-align: center;
+  font-weight: 100;
+  color: #00ffff;
+  font-size: 1em;
+}
+
+#time .dots {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 500;
+}
+
+#time .dots::before {
+  content: "";
+  position: absolute;
+  top: 2vh;
+  width: 2vh;
+  height: 2vh;
+  background: var(--clr);
+  border-radius: 50%;
+  box-shadow: 0 0 1vh var(--clr), 0 0 5vh var(--clr);
+}
+
+#time .seconds {
+  font-weight: 30;
+  color: #00ffff;
+  transition: color 0.5s;
+}
+
+#telegramButton {
+  background: aqua;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  min-width: 140px;
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.tb {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.data {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin: 2vh;
+}
+.data div {
+  margin: auto;
+  padding: 0.5vh;
+}
+.data h4 {
+  color: aqua;
+}
+.data h5 span {
+  color: gray;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #2b2b2b;
+  color: white;
+}
+
+body.active {
+  background: #f8f8f8;
+  color: black;
+}
+
+.table {
+  overflow-x: auto;
+  max-width: 100%;
+  margin-top: 1vh;
+}
+
+@media screen and (max-width: 1052px) {
+  .table {
+    width: auto;
+    overflow-x: auto;
+  }
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 1em;
+  width: 96%;
+  margin: 2%;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 0.5vh;
+}
+
+th {
+  color: #fff;
+}
+
+tbody {
+  background-color: #343038;
+  padding: 1vh;
+}
+table td:first-of-type {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+table td:last-of-type {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+tbody tr {
+  background-color: #55545a;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 1vh;
+}

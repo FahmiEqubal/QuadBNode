@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <title>WazirX API</title>
+  </head>
+  <body>
+    <div class="menu">
+      <div><h1>Equbal_Fahmi</h1></div>
+      <div>
+        <div class="subMenu">
+          <select>
+            <option value="INR">INR</option>
+          </select>
+          <select class="base_unit"></select>
+          <select>
+            <option>BUY BTC</option>
+          </select>
+        </div>
+      </div>
+      <div class="subMenu">
+        <div id="time" class="circle-container">
+          <div class="circle" style="--clr: #00ffff">
+            <div class="dots sec_dot"></div>
+            <svg>
+              <circle cx="20" cy="20" r="20"></circle>
+              <circle cx="20" cy="20" r="20" id="ss"></circle>
+            </svg>
+            <div class="seconds">00</div>
+          </div>
+        </div>
+
+        <a class="tb" href="https://t.me/EqubalDeoraji" target="_blank">
+            <button id="telegramButton">
+                <i class="fab fa-telegram"></i> Connect Telegram
+            </button>
+        </a>        
+
+        <div id="toggle">
+          <i class="indicator"></i>
+        </div>
+      </div>
+    </div>
+    <div class="data">
+      <div>
+        <h4>0.26%</h4>
+        <span>5 Mins</span>
+      </div>
+      <div>
+        <h4>1.23%</h4>
+        <span>1 Hour</span>
+      </div>
+      <div>
+        <h5>Best Price to Trade</h5>
+        <h1>&#8377; 39,14,214</h1>
+        <h5>Average BTC/INR net price including commission</h5>
+      </div>
+      <div>
+        <h4>4.14%</h4>
+        <span>1 Day</span>
+      </div>
+      <div>
+        <h4>10.16%</h4>
+        <span>7 Days</span>
+      </div>
+    </div>
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Platform</th>
+            <th>Last Traded Price</th>
+            <th>Buy / Sell Price</th>
+            <th>Diffrence</th>
+            <th>Savings</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div> 
+    <div class="footer">
+        <a class="tb" href="https://t.me/EqubalDeoraji" target="_blank">
+            <button id="telegramButton">
+                <i class="fab fa-telegram"></i> Add hodlinfo home screen
+            </button>
+        </a>   
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
